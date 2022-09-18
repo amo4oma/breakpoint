@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Monaco';
+  src: url(Font/monaco.ttf) format(ttf)  ;
+}
+@font-face {
+  font-family: 'Upheaval TT (BRK)';
+  src: url(Font/upheavtt.ttf) format(ttf)  ;
+}
+
+body{
+    background-color: #101010;
+}
+
+.clip {
+    clip-path: polygon(
+      0px 20px,
+      4px 20px,
+      4px 12px,
+      8px 12px,
+      8px 8px,
+      12px 8px,
+      12px 4px,
+      16px 4px,
+      20px 4px,
+      20px 0px,
+      calc(100% - 20px) 0px,
+      calc(100% - 20px) 4px,
+      calc(100% - 12px) 4px,
+      calc(100% - 12px) 8px,
+      calc(100% - 8px) 8px,
+      calc(100% - 8px) 12px,
+      calc(100% - 4px) 12px,
+      calc(100% - 4px) 16px,
+      calc(100% - 4px) 20px,
+      100% 20px,
+      100% calc(100% - 20px),
+      calc(100% - 4px) calc(100% - 20px),
+      calc(100% - 4px) calc(100% - 12px),
+      calc(100% - 8px) calc(100% - 12px),
+      calc(100% - 8px) calc(100% - 8px),
+      calc(100% - 12px) calc(100% - 8px),
+      calc(100% - 12px) calc(100% - 4px),
+      calc(100% - 16px) calc(100% - 4px),
+      calc(100% - 20px) calc(100% - 4px),
+      calc(100% - 20px) 100%,
+      20px 100%,
+      20px calc(100% - 4px),
+      12px calc(100% - 4px),
+      12px calc(100% - 8px),
+      8px calc(100% - 8px),
+      8px calc(100% - 12px),
+      4px calc(100% - 12px),
+      4px calc(100% - 16px),
+      4px calc(100% - 20px),
+      0px calc(100% - 20px)
+    );
+  }
+
+  nav{
+    .nav-link{
+      font-family: "Monaco";
+      font-size: 25px;
+    }
+  }
+
+  .banner{
+    .swiper-custom-container{
+      .swiper-pagination-bullet {
+        padding: 5px 0px;
+        border-radius: 0;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 25px;
+        color:#fff;
+        opacity: 1;
+        background: none;
+        font-family: 'Monaco';
+     
+      }
+      .swiper-pagination-bullet-active {
+        color:#fff;
+        position: relative;
+        padding: 5px 30px;
+        &:after {
+          content: " ";
+          height: 1px;
+          width: 30px;
+          background-color: #fff;
+          position: absolute;
+          top: 60%;
+          margin-left: 2px;
+      }
+  
+      }
+      .mySwiper{
+        .swiper-wrapper{
+          .swiper-slide{
+            
+            .slide-text{
+              width: 100%;
+              height: 100%;
+              padding: 0 50px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              background-color: rgba($color: #AA1A17, $alpha: 0.6);
+              .slide-header{
+                font-family: 'Upheaval TT (BRK)';
+                font-size: 75px;
+                width: 40%;
+                line-height: 1;
+              }
+              .slide-p{
+                font-family: 'Monaco';
+                font-size: 30px;
+                line-height: 1;
+                width: 40%;
+              }
+              .slide-btn{
+                padding: 2px 20px;
+                font-size: 30px;
+                font-family: 'Monaco';
+        
+              }
+            }
+            .slide-1{
+              width: 100vw;
+              height: 90vh;
+              background-image: url('./Assests/slide-1.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+  
+            }
+            .slide-2{
+              width: 100vw;
+              height: 90vh;
+              background-image: url('./Assests/slide-2.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+  
+            }
+            .slide-3{
+              width: 100vw;
+              height: 90vh;
+              background-image: url('./Assests/slide-3.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+  
+            }
+          }
+        }
+      }
+    }
+  }
