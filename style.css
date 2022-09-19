@@ -99,6 +99,12 @@ nav .nav-link {
   font-family: 'Monaco';
 }
 
+.banner .swiper-custom-container .mySwiper .swiper-wrapper .swiper-slide .slide-text .slide-btn:hover {
+  box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
 .banner .swiper-custom-container .mySwiper .swiper-wrapper .swiper-slide .slide-1 {
   width: 100vw;
   height: 90vh;
@@ -124,5 +130,70 @@ nav .nav-link {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#services {
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+#services h1 {
+  font-size: 40px;
+  font-family: 'Upheaval TT (BRK)';
+  color: #fff;
+}
+
+#services p {
+  font-family: 'Monaco';
+  font-size: 27px;
+  color: #fff;
+}
+
+#services .elmt {
+  position: absolute;
+}
+
+#services .element-1 {
+  left: 0px;
+  z-index: 0;
+}
+
+#services .element-2 {
+  left: 50%;
+}
+
+#services .element-3 {
+  right: -6%;
+  top: 60%;
+}
+
+#services .element-4 {
+  left: -50px;
+  bottom: 0px;
+}
+
+#services .services-card {
+  background-color: #101010;
+  padding: 35px 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+  position: relative;
+}
+
+#services .services-card h4 {
+  color: #fff;
+  font-family: 'Monaco';
 }
 /*# sourceMappingURL=style.css.map */
