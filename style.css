@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: 'Monaco';
-  src: url(Font/monaco.ttf) format(ttf);
+  src: url(Font/monaco.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'Upheaval TT (BRK)';
-  src: url(Font/upheavtt.ttf) format(ttf);
+  src: url(Font/upheavtt.ttf) format("truetype");
 }
 
 body {
@@ -26,7 +26,24 @@ body {
 
 nav .nav-link {
   font-family: "Monaco";
-  font-size: 25px;
+  font-size: 35px;
+  position: relative;
+  margin-right: 15px;
+}
+
+nav .nav-link:hover .line {
+  width: 100%;
+}
+
+nav .line {
+  width: 0%;
+  height: 5px;
+  background-color: #AA1A17;
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .banner .swiper-custom-container .swiper-pagination-bullet {
@@ -190,10 +207,163 @@ nav .nav-link {
       justify-content: space-around;
   margin-top: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 #services .services-card h4 {
   color: #fff;
   font-family: 'Monaco';
+}
+
+#services .custom-modal {
+  width: 100%;
+  position: relative;
+  z-index: 55;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+}
+
+#services .custom-modal .description {
+  -webkit-transition: all ease;
+  transition: all ease;
+}
+
+#custmers {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#custmers .container {
+  position: relative;
+  margin-top: 52px;
+}
+
+#custmers .arrows-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0px;
+}
+
+#custmers .arrows-container .sw-left,
+#custmers .arrows-container .sw-right {
+  position: relative;
+  z-index: 2;
+}
+
+#custmers .arrows-container .icone-border {
+  background-color: transparent;
+  margin-left: 5px;
+  border: none;
+}
+
+#custmers .arrows-container .las {
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: none;
+}
+
+#custmers .arrows-container .right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#custmers .customer-opinion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+#custmers .customer-opinion-container h1 {
+  font-family: "Upheaval TT (BRK)";
+}
+
+#custmers .customer-opinion-container p {
+  font-family: "Monaco";
+  font-size: 25px;
+  line-height: 1;
+}
+
+#custmers .customer-opinion-container name {
+  font-family: "Upheaval TT (BRK)";
+  color: #DB0C15;
+  font-size: 30px;
+}
+
+#custmers .customer-opinion-container span {
+  font-family: "Monaco";
+  font-size: 20px;
+}
+
+footer {
+  position: relative;
+}
+
+footer .stay-in-t-col {
+  background-image: url(Assests/bg-footer.png);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 5;
+}
+
+footer .stay-in-t-col::after {
+  content: " ";
+  position: absolute;
+  background-color: rgba(170, 26, 23, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+footer .stay-in-t-col .stay-in-t-text {
+  padding: 50px 30px 50px 0px;
+}
+
+footer .stay-in-t-col .stay-in-t-text h1 {
+  font-family: "Upheaval TT (BRK)";
+  font-size: 50px;
+  width: 60%;
+  line-height: 1;
+}
+
+footer .stay-in-t-col .stay-in-t-text p {
+  font-family: "Monaco";
+  font-size: 33px;
+  line-height: 1;
+}
+
+footer .stay-in-t-col .stay-in-t-text .contact-us {
+  font-family: "Monaco";
+  font-size: 28px;
+  color: #fff;
+  border: #fff 1px solid;
+  background-color: transparent;
+  padding: 0px 10px;
+  border-radius: 5px;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+footer .stay-in-t-col .stay-in-t-text .contact-us:hover {
+  background-color: #fff;
+  color: #DB0C15;
 }
 /*# sourceMappingURL=style.css.map */
