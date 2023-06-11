@@ -366,4 +366,46 @@ footer .stay-in-t-col .stay-in-t-text .contact-us:hover {
   background-color: #fff;
   color: #DB0C15;
 }
+
+.address-col {
+  margin-left: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .address-col {
+    margin-left: 1rem;
+  }
+}
+
+.address-col h1 {
+  color: #fff !important;
+  font-family: "Monaco";
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.address-col h5 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.address-col .la-envelope,
+.address-col .la-phone-volume,
+.address-col .la-map-marker-alt {
+  color: #AA1A17;
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */

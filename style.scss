@@ -366,7 +366,35 @@ body{
         color: #DB0C15;
       }
      }
+
     }
+    
+  }
+ }
+ .address-col{
+  margin-left: 8rem;
+ display: flex;
+ justify-content: center;
+ align-items: stretch;
+ flex-direction: column;
+ @media (max-width:500px) {
+  margin-left: 1rem;
+ }
+  h1{
+    color: #fff !important;
+    font-family: "Monaco";
+    font-size: 55px;
+    font-weight: 900;
+  } 
+  h5{
+    font-size: 35px;
+    color: #fff;
+  }
+  .la-envelope,
+  .la-phone-volume,
+  .la-map-marker-alt{
+    color: #AA1A17;
+    font-size: 40px;
   }
  }
 
