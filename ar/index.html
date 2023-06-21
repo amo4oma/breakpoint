@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,16 +27,21 @@
     <!--local styles -->
  
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
-
+    <style>
+      body {
+  direction: ltr;
+  text-align: left;
+}
+    </style>
   </head>
   <body>
-    <a href="https://wa.me/9647833333762?text=I'm%20interested%20in%20your%20servises%20" target="_blank" class="whatsapp"><img class="whatsapp" src="./Assests/whatsapp .png"></a>
+    <a href="https://wa.me/9647833333762?text=I'm%20interested%20in%20your%20servises%20" target="_blank" class="whatsapp"><img class="whatsapp" src="./../Assests/whatsapp .png"></a>
     <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img loading="" width="150" src="Logo/logo.png" alt="break point Logo" />
+          <img loading="" width="150" src="../Logo/logo.png" alt="break point Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -51,34 +56,42 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white " aria-current="page" href="/"
-                > Home <span class="line"></span> </a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#services">Services<span class="line"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="projects.html">Portfolio <span class="line"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light">About Us <span class="line"></span></a>
-            </li>
-            <li class="nav-item">
-              <a href="/contact.html" class="nav-link btn btn-danger text-light clip">
-                book an appointment
-              </a>
-            </li>
+        
             <li class="nav-item">
               <select id="lang" onchange="window.location.href=this.options [this.selectedIndex].value">
-                <option value="/">English</option>
-                <option value="/ar">Arabic</option>
+              
+                <option value="/ar">العربية</option>
+                  <option value="/">English</option>
+                
               </select>
             
             
+            </li> 
+      
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link btn btn-danger text-light clip">
+                احجز موعد اجتماع
+              </a>
+            </li>
+     
+              <li class="nav-item">
+              <a class="nav-link text-light" href="#services">الخدمات<span class="line"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="projects.html">اعمالنا <span class="line"></span></a>
+            </li>
+                 
+            <li class="nav-item">
+              <a class="nav-link text-light">من نحن<span class="line"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " aria-current="page" href="/"
+                > الرئيسية <span class="line"></span> </a
+              >
             </li>
           </ul>
+      
+       
         </div>
       </div>
     </nav>
@@ -97,7 +110,7 @@
                 
              
         <a href="/contact.html" class="slide-btn btn btn-light text-danger clip">
-          book a meeting date
+          احجز موعد اجتماع
         </a>
                   
                 </div>
@@ -111,7 +124,7 @@
                      Cutting-Edge Printing Services and Digital Solutions with Breakpoint."
                   </p>
                   <a href="/contact.html" class="slide-btn btn btn-light text-danger clip">
-                    book a meeting date
+                    احجز موعد اجتماع
                   </a>
                 </div>
               </div>
@@ -124,7 +137,7 @@
                     Your Business with Breakpoint's Expertise in Website Development and ERP Designing."
                   </p>
                   <a class="slide-btn btn btn-light text-danger clip">
-                    book a meeting date
+                    احجز موعد اجتماع
                   </a>
                 </div>
               </div>
@@ -137,7 +150,7 @@
                     Online with Breakpoint's Search Engine Optimization and Digital Marketing Strategies
                   </p>
                   <a class="slide-btn btn btn-light text-danger clip">
-                    book a meeting date
+                    احجز موعد اجتماع
                   </a>
                 </div>
               </div>
@@ -150,7 +163,7 @@
                     the Influencer Effect with Breakpoint's Expert Management on Social Media Platforms."
                   </p>
                   <a class="slide-btn btn btn-light text-danger clip">
-                    book a meeting date
+                    احجز موعد اجتماع
                   </a>
                 </div>
               </div>
@@ -170,11 +183,11 @@
           </svg>
         </div>
       <div class="container">
-        <img loading="" class="elmt element-1" src="Assests/element-1.png" alt="" />
-        <img loading="" class="elmt element-2" src="Assests/element-2.png" alt="" />
-        <img loading="" class="elmt element-3" src="Assests/element-3.png" alt="" />
-        <img loading="" class="elmt element-4" src="Assests/element-4.png" alt="" />
-        <img loading="" class="elmt element-5" src="Assests/elemnet-5.png" alt="" />
+        <img loading="" class="elmt element-1" src="../../Assests/element-1.png" alt="" />
+        <img loading="" class="elmt element-2" src="../Assests/element-2.png" alt="" />
+        <img loading="" class="elmt element-3" src="../Assests/element-3.png" alt="" />
+        <img loading="" class="elmt element-4" src="../Assests/element-4.png" alt="" />
+        <img loading="" class="elmt element-5" src="../Assests/elemnet-5.png" alt="" />
         <div class="header">
           <h1 class="title">services</h1>
           <p>
@@ -198,7 +211,7 @@
           <div class="col-lg-4">
             <div id="one" class="services-card">
               <img loading=""
-                src="Assests/web-development 1@2x.png"
+                src="../Assests/web-development 1@2x.png"
                 alt="web-development"
               />
               <h4>Website development</h4>
@@ -206,14 +219,14 @@
           </div>
           <div class="col-lg-4">
             <div id="two" class="services-card">
-              <img loading="" src="Assests/erp 1@2x.png" alt="web-development" />
+              <img loading="" src="../Assests/erp 1@2x.png" alt="web-development" />
               <h4>ERP Designing</h4>
             </div>
           </div>
           <div class="col-lg-4">
             <div id="three" class="services-card">
               <img loading=""
-                src="Assests/search-engine-optimization 1@2x.png"
+                src="../Assests/search-engine-optimization 1@2x.png"
                 alt="web-development"
               />
               <h4>Improving search engine results</h4>
@@ -223,19 +236,19 @@
         <div class="row">
           <div class="col-lg-4">
             <div id="four" class="services-card">
-              <img loading="" src="Assests/bullhorn 1@2x.png" alt="web-development" />
+              <img loading="" src="../Assests/bullhorn 1@2x.png" alt="web-development" />
               <h4>Advertising</h4>
             </div>
           </div>
           <div class="col-lg-4">
             <div id="five" class="services-card">
-              <img loading="" src="Assests/influencer 1@2x.png" alt="web-development" />
+              <img loading="" src="../Assests/influencer 1@2x.png" alt="web-development" />
               <h4>Managing influencers on social media pages</h4>
             </div>
           </div>
           <div class="col-lg-4">
             <div id="six" class="services-card">
-              <img loading="" src="Assests/bullhorn 2@2x.png" alt="web-development" />
+              <img loading="" src="../Assests/bullhorn 2@2x.png" alt="web-development" />
               <h4>Digital marketing</h4>
             </div>
           </div>
@@ -243,7 +256,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div id="seven" class="services-card">
-              <img loading="" src="Assests/Group 25@2x.png" alt="web-development" />
+              <img loading="" src="../Assests/Group 25@2x.png" alt="web-development" />
               <h4>Branding Design</h4>
             </div>
           </div>
@@ -281,8 +294,8 @@
   
       <div class="container">
         <div class="arrows-container">
-          <button class="icone-border sw-right"><img loading="" class="las left" src="Assests/arrow.png" alt=""></button>
-          <button class="icone-border sw-left" ><img loading="" class="las right" src="Assests/arrow.png" alt=""></button> 
+          <button class="icone-border sw-right"><img loading="" class="las left" src="../Assests/arrow.png" alt=""></button>
+          <button class="icone-border sw-left" ><img loading="" class="las right" src="../Assests/arrow.png" alt=""></button> 
        
        
          </div>
@@ -436,6 +449,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
  
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="../index.js"></script>
   </body>
 </html>
