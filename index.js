@@ -23,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
       },
   });
 var lang = $('#lang').val()
-  if (lang == '/'){
+  if (lang == '/breakpoint/'){
       var typed = new Typed('#typing', {
     strings: ["creative", "We love what we do","effective","We think out of the box","Beak point From nothing to everything"],
     typeSpeed: 50,
@@ -32,7 +32,7 @@ var lang = $('#lang').val()
     cursorChar: '|',
     autoInsertCss: true,
   });
-  } if (lang == '/ar') {
+  } if (lang == '/breakpoint/ar') {
     var typed = new Typed('#typing', {
       strings: ["مبدعون ", "حب ما نفعله","فعالين","نفكر خارج الصندوق","Beak point من لا شي الى كل شي"],
       typeSpeed: 50,
