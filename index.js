@@ -59,6 +59,31 @@ var lang = $('#lang').val()
 
  
   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(CSSRulePlugin);
+
+  let about = gsap.timeline({
+    scrollTrigger :{
+      trigger: '#about',
+      scrub : 0.5,
+      start : "-100% top",
+      end: 'bottom',
+    
+
+    }
+  })
+  let rule = CSSRulePlugin.getRule(".about-title::after");
+
+    
+
+  
+      about.from('.about-title',5, {x:-50 , opacity: 0.5},'f')
+      about.from('.about-p',5, {x:50 , opacity: 0},'f')
+      about.to(rule, 1 , {cssRule : {top : '100px'}})
+    
+
+
+
+ 
 
   let tl = gsap.timeline({
       scrollTrigger :{
