@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html >
+<html lang="ar" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,7 +28,7 @@
  
 
     <link rel="stylesheet" href="../style.css" />
-
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
       body {
   direction: ltr;
@@ -60,8 +60,8 @@
             <li class="nav-item">
               <select id="lang" onchange="window.location.href=this.options [this.selectedIndex].value">
               
-                <option value="/breakpoint/ar">العربية</option>
-                  <option value="/breakpoint">English</option>
+                <option value="/ar">العربية</option>
+                  <option value="/">English</option>
                 
               </select>
             
@@ -69,7 +69,7 @@
             </li> 
       
             <li class="nav-item">
-              <a href="/breakpoint/ar/contact.html" class="nav-link btn btn-danger text-light clip">
+              <a href="/contact.html" class="nav-link btn btn-danger text-light clip">
                 احجز موعد اجتماع
               </a>
             </li>
@@ -78,14 +78,14 @@
               <a class="nav-link text-light" href="#services">الخدمات<span class="line"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="/breakpoint/ar/projects.html">اعمالنا <span class="line"></span></a>
+              <a class="nav-link text-light" href="projects.html">اعمالنا <span class="line"></span></a>
             </li>
                  
             <li class="nav-item">
               <a class="nav-link text-light">من نحن<span class="line"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white " aria-current="page" href="#"
+              <a class="nav-link text-white " aria-current="page" href="/"
                 > الرئيسية <span class="line"></span> </a
               >
             </li>
@@ -103,13 +103,14 @@
             <div class="swiper-slide">
               <div class="slide-1">
                 <div class="slide-text text-center">
+                  <h1 class="text-white we-re">نحن</h1>
         <div class="">
            <h1 id="typing"></h1>
         </div>
                    
                 
              
-        <a href="/breakpoint/ar/contact.html" class="slide-btn btn btn-light text-danger clip">
+        <a href="/contact.html" class="slide-btn btn btn-light text-danger clip">
           احجز موعد اجتماع
         </a>
                   
@@ -123,7 +124,7 @@
                   <p class="text-light slide-p">
                      Cutting-Edge Printing Services and Digital Solutions with Breakpoint."
                   </p>
-                  <a href="/breakpoint/ar/contact.html" class="slide-btn btn btn-light text-danger clip">
+                  <a href="/contact.html" class="slide-btn btn btn-light text-danger clip">
                     احجز موعد اجتماع
                   </a>
                 </div>
@@ -173,52 +174,32 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-sm-12">
-              <p dir="rtl" class="text-light about-p"> مرحبا،<br />
-               
-                نحن شركة "نقطة التحول"، شركة تعمل في مجالات متعددة ومتخصصة في تقديم الحلول الذكية والمبتكرة لعملائنا في السوق
-                العربي. نحن نؤمن بالابتكار والتحول ونسعى جاهدين لتوفير أفضل الخدمات والمنتجات لعملائنا. تتميز شركتنا بفريق عمل متخصص
-                وذو خبرة عالية في المجالات التي نعمل فيها، حيث نحرص على توظيف أفضل الخبرات في البرمجة والاتمتة وتصميم التطبيقات
-                والمواقع الإلكترونية. نحن نستخدم أحدث التقنيات والأدوات لتلبية احتياجات عملائنا وتحقيق أهدافهم بأفضل الطرق الممكنة. كما
-                نهتم بقوة بالتسويق والإعلانات ونحرص على تطبيق أحدث الأساليب والتقنيات في استخدام الذكاء الاصطناعي لتحقيق أفضل
-                النتائج لعملائنا. ويتميز فريقنا بالإبداع والابتكار في هذا المجال. نحن نعتبر تطوير وإدارة المشاريع هي جزء لا يتجزأ من أنشطتنا
-                ونحرص على توظيف فريق متخصص وذو خبرة في هذا المجال. كما نقوم بالتعاون مع عملائنا في اكتشاف أفكار مشاريع وعرضها
-                للاستثمار، ونقدم استشارات أعمال من فريق متعدد الجنسيات للمساعدة في تحقيق أهداف عملائنا.   </div>
-          <div class="col-lg-3 col-sm-12">
-            <h1 class="text-light mt-5 ml-5 about-title ">عن الشركه</h1>
-          </div>
-        </div>
-      </div>
-  </section>
-    <section id="services" class="services" dir="rtl">
+    <section id="services" class="services">
       
-      <div class="center text-center" dir="rtl">
+      <div class="center text-center">
         <h1 class="">Scroll Down to discover</h1>
         <svg width="80" height="80" viewbox="0 0 50 130">
           <rect id="scroll" x="0" y="0" width="50" height="105" fill="#191919" stroke="#AA1A17" background="#191919" stroke-width="3" rx="25" ry="25"></rect>
             <circle id="circle-roll" cx="25" cy="32" r="8" fill="#AA1A17"></circle>
           </svg>
         </div>
-      <div class="container" dir="rtl">
-        <img loading="" class="elmt element-1" src="../Assests/element-1.png" alt="" />
+      <div class="container">
+        <img loading="" class="elmt element-1" src="../../Assests/element-1.png" alt="" />
         <img loading="" class="elmt element-2" src="../Assests/element-2.png" alt="" />
         <img loading="" class="elmt element-3" src="../Assests/element-3.png" alt="" />
         <img loading="" class="elmt element-4" src="../Assests/element-4.png" alt="" />
         <img loading="" class="elmt element-5" src="../Assests/elemnet-5.png" alt="" />
-        <div class="header" dir="rtl">
-          <h1 class="title">الخدمات</h1>
+        <div class="header">
+          <h1 class="title">services</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In orci
             donec eros, dolor faucibus dignissim.
           </p>
-          <div class="custom-modal" dir="rtl">
+          <div class="custom-modal">
             <h1></h1>
             <p class="description"></p>
-            <div dir="rtl" id="btns" class="d-flex flex-lg-row flex-sm-column justify-content-between align-items-center">
-              <button id="book" class="btn bg-light text-danger clip" href="/breakpoint/ar/contact.html">Book an Appointment</button>
+            <div id="btns" class="d-flex flex-lg-row flex-sm-column justify-content-between align-items-center">
+              <button id="book" class="btn bg-light text-danger clip" href="/contact.html">Book an Appointment</button>
               <button id="back" class="btn btn-danger text-light clip">Back</button>
               
             </div>
@@ -234,15 +215,13 @@
                 src="../Assests/web-development 1@2x.png"
                 alt="web-development"
               />
-              <h4> تصميم وبناء التطبيقات 
-              </h4>
+              <h4>Website development</h4>
             </div>
           </div>
           <div class="col-lg-4">
             <div id="two" class="services-card">
               <img loading="" src="../Assests/erp 1@2x.png" alt="web-development" />
-              <h4>بناءالانظمة للمؤسات والشركات
-              </h4>
+              <h4>ERP Designing</h4>
             </div>
           </div>
           <div class="col-lg-4">
@@ -259,7 +238,7 @@
           <div class="col-lg-4">
             <div id="four" class="services-card">
               <img loading="" src="../Assests/bullhorn 1@2x.png" alt="web-development" />
-              <h4>التسويق</h4>
+              <h4>Advertising</h4>
             </div>
           </div>
           <div class="col-lg-4">
@@ -460,7 +439,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
     <script

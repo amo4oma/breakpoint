@@ -73,12 +73,19 @@ var lang = $('#lang').val()
   })
   let rule = CSSRulePlugin.getRule(".about-title::after");
 
-    
-
+ 
+  about.from('.about-title',5, {x:-50 , opacity: 0.5},'f')
+     
+  about.from('.about-p',5, {x:200 , opacity: 0})
+  about.to('.about-title',{position: 'sticky', top: 50})
   
-      about.from('.about-title',5, {x:-50 , opacity: 0.5},'f')
-      about.from('.about-p',5, {x:50 , opacity: 0},'f')
-      about.to(rule, 1 , {cssRule : {top : '100px'}})
+      about.to(rule, 1 , {cssRule : {top : 50}})
+      
+      about.from('.mission',5, {x:-50 , opacity: 0})
+      about.from('.mission-overlay-bg',5, {x:-50 , opacity: 0})
+      about.from('.vision',10, {x:50 , opacity: 0} ,'v')
+      about.from('.vision-overlay-bg',5, {x:-50 , opacity: 0},'v')
+  
     
 
 

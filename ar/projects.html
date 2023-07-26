@@ -28,8 +28,8 @@
  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon@latest/css/flaticon.css">
 
-    <link rel="stylesheet" href="../style.css" />
-
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -38,7 +38,7 @@
     <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img loading="" width="150" src="../Logo/logo.png" alt="break point Logo" />
+          <img loading="" width="150" src="Logo/logo.png" alt="break point Logo" />
          
 
         </a>
@@ -55,39 +55,35 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-        
             <li class="nav-item">
-              <select id="lang" onchange="window.location.href=this.options [this.selectedIndex].value">
-              
-                <option value="/breakpoint/ar">العربية</option>
-                  <option value="/breakpoint">English</option>
-                
-              </select>
-            
-            
-            </li> 
-      
-            <li class="nav-item">
-              <a href="/breakpoint/ar/contact.html" class="nav-link btn btn-danger text-light clip">
-                احجز موعد اجتماع
-              </a>
-            </li>
-     
-              <li class="nav-item">
-              <a class="nav-link text-light" href="/breakpoint/ar/index.html#services">الخدمات<span class="line"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/breakpoint/ar/projects.html">اعمالنا <span class="line"></span></a>
-            </li>
-                 
-            <li class="nav-item">
-              <a class="nav-link text-light">من نحن<span class="line"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white " aria-current="page" href="#"
-                > الرئيسية <span class="line"></span> </a
+              <a class="nav-link text-white " aria-current="page" href="/"
+                > Home <span class="line"></span> </a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Services<span class="line"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Portfolio <span class="line"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light">About Us <span class="line"></span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link btn btn-danger text-light clip">
+                book an appointment
+              </a>
+              <i class="flaticon-your-icon-class"></i>
+
+            </li>
+            <!-- <li class="nav-item">
+              <select id="lang" onchange="handelLang(this)">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+              </select>
+            
+              </a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -225,6 +221,6 @@
       referrerpolicy="no-referrer"
     ></script>
  
-    <script type="module" src="../index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

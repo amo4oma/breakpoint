@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Monaco';
-  src: url(Font/monaco.ttf) format("truetype");
+  src: url(Font/Exo-Regular.otf) format("truetype");
 }
 
 @font-face {
@@ -59,6 +59,10 @@ body {
   padding: 50px 0px;
 }
 
+#about .over-h {
+  overflow: hidden;
+}
+
 #about .about-p {
   font-size: 20px;
   text-align: justify;
@@ -92,6 +96,58 @@ body {
   width: 100%;
   height: 100%;
   left: -40px;
+  top: 20px;
+  z-index: -10;
+  border-radius: 10px;
+}
+
+#about .vission-container {
+  position: relative;
+  z-index: 11;
+}
+
+#about .vission-container .vision-overlay-bg {
+  background-color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 40px;
+  top: 20px;
+  border-radius: 10px;
+  z-index: -50;
+}
+
+#about .vission-container .vision {
+  margin-top: 100px;
+  background-color: rgba(170, 26, 23, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+#about .mission {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  color: #000000;
+  z-index: 100;
+  margin-top: 50px;
+}
+
+#about .mission .z-10 {
+  position: relative;
+  z-index: 10 !important;
+}
+
+#about .mission .mission-overlay-bg {
+  background-color: #AA1A17;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 40px;
   top: 20px;
   z-index: -10;
   border-radius: 10px;
@@ -469,6 +525,12 @@ nav .line {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+#projects {
+  padding: 20px 100px;
+  background: black;
+  background: linear-gradient(146deg, rgba(0, 0, 0, 0.880077) 60%, rgba(170, 23, 23, 0.714811) 100%);
 }
 
 #custmers {
